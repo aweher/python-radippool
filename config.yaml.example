@@ -1,0 +1,12 @@
+database:
+  host: "localhost"
+  user: "usuario_db"
+  password: "contraseña_db"
+  db_name: "nombre_db"
+
+ipv4_pools:
+  - pool_name: "Pool1"
+    block: "192.168.1.0/24"
+  - pool_name: "Pool2"
+    block: "192.168.2.0/24"
+  # Agrega más bloques y nombres de pools según sea necesario

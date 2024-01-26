@@ -1,0 +1,4 @@
+PyMySQL
+PyYAML
+tqdm
+pyfiglet
