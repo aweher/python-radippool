@@ -7,6 +7,9 @@ database:
 ipv4_pools:
   - pool_name: "Pool1"
     block: "192.168.1.0/24"
+    exceptions:
+    - "192.168.1.88"
+    - "192.168.1.1"
   - pool_name: "Pool2"
     block: "192.168.2.0/24"
   # Agrega más bloques y nombres de pools según sea necesario

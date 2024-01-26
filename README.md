@@ -25,7 +25,7 @@ cp config.yaml.example config.yaml
 
 ## Archivo de Configuración
 
-El script lee la configuración de un archivo `config.yaml` que debe estar en el mismo directorio que el script. Este archivo debe contener los parámetros de conexión a la base de datos y los bloques IPv4 con sus nombres de pools correspondientes. Aquí tienes un ejemplo de este archivo:
+El script lee la configuración de un archivo `config.yaml` que debe estar en el mismo directorio que el script. Este archivo debe contener los parámetros de conexión a la base de datos y los bloques IPv4 con sus nombres de pools correspondientes. También se le pueden especificar IPs a exceptuar de forma individual. Aquí tienes un ejemplo de este archivo:
 
 ```yaml
 database:
@@ -37,6 +37,9 @@ database:
 ipv4_pools:
   - pool_name: "Pool1"
     block: "192.168.1.0/24"
+    exceptions:
+    - "192.168.1.88"
+    - "192.168.1.1"
   - pool_name: "Pool2"
     block: "192.168.2.0/24"
   # Agrega más bloques y nombres de pools según sea necesario
