@@ -19,7 +19,7 @@ git clone https://github.com/aweher/python-radippool.git
 cd python-radipool
 python3 -m venv .venv
 source .venv/bin/activate
-pip3 install PyMySQL PyYAML
+pip3 install -r requirements.txt
 cp config.yaml.example config.yaml
 ```
 
